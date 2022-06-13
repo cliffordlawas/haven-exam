@@ -1,0 +1,25 @@
+<div class="header-wrapper">
+    <div class="row">
+        <div class="col-sm-6 bg">
+            <div class="container">
+                <div class="header-logo"></div>
+                <h1 class="title">{{title}} </h1>
+                <p class="sub-title">{{subtitle}} </p>
+            </div>
+        </div>
+        <div class="col-sm-6 bg-2">
+            <div class="menu-header container">
+                <h2 class="title-only">News & blog</h2>
+                <ol class="blog-item">
+                        <ng-container *ngFor="let m of blogItem">
+                        <li>
+                            <a [href]="m.url">{{ m.label }}</a>
+                        </li>
+                
+                    </ng-container>
+                </ol>
+            </div>
+        </div>
+    </div>
+  </div>
+  

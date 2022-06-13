@@ -1,0 +1,29 @@
+<form class="news-letter-form container row " [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 title">SIGN UP TO OUR NEWSLETTER<br/><br/></div>
+  <div class=" col-xs-12 col-sm-12 col-lg-4 col-md-6 col-sm-12">
+    <div class="">
+      <input  type="text"
+        formControlName="fullName"
+        class="form-control primary-input"
+        placeholder="Full name"
+        id="fullName"
+      /><br/>
+    </div>
+  </div>
+  <div class=" col-xs-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="">
+      <input  type="text"
+        formControlName="email"
+        class="form-control primary-input"
+        placeholder="Email Address"
+        id="email"
+      /><br/>
+    </div>
+    
+  </div>
+  <div class="col">
+    <button type="submit" class="btn btn-primary primary-btn col btn-block">
+      Submit
+    </button>
+  </div>
+</form>

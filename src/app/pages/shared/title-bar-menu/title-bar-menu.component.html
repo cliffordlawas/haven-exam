@@ -1,0 +1,5 @@
+<ul class="nav nav-pills custom-nav justify-content-center">
+    <li class="nav-item" *ngFor="let menuItem of menuItems">
+      <a class="nav-link" [class.active]='menuItem.isActive' aria-current="page" (click)="navigatePage.emit(menuItem)">{{menuItem.label}}</a>
+    </li>
+  </ul>

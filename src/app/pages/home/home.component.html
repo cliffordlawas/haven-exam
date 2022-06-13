@@ -1,0 +1,11 @@
+
+<app-header></app-header>
+<div class="container-full ">
+  <app-title-bar-menu [menuItems]="menuItems" (navigatePage)="navigatePage($event)"></app-title-bar-menu>
+  <div class="row">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+<app-contact-us (onContactSubmit)="sendContact($event)" [contactUsList]="contactUsList"></app-contact-us>
+<ng-container>
+<app-footer></app-footer>

@@ -1,0 +1,29 @@
+@import "../../../../variable";
+
+.custom-nav {
+    width: 100%;
+    background: white;
+    background-color: rgba(255,255,255,.95);
+    box-shadow: 0px 4px 6px 2px rgb(0 0 0 / 30%);
+    padding: 14px;
+    li {
+        font-family: 'National-Light';
+        font-weight: 300;
+        letter-spacing: .64px;
+        font-size: 18px !important;
+        line-height: 20px !important;
+        a { 
+            color: #4a4a4a;
+            &:hover {
+                cursor: pointer;
+            }
+            &.active {
+                font-family: 'National-Regular';
+                background-color: transparent;
+                color: $primary-color;
+                font-weight: bolder;
+                font-size: 22px;
+            }
+        }
+    }
+}

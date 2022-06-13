@@ -1,0 +1,27 @@
+@import "../../../../variable";
+
+.financial-wrapper {
+    
+    background-color: $dark-color;
+    .bg-video {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media(max-width: 500px) {
+            background-position: center right;
+        }
+    }
+
+    .padding {
+        padding: 40px;
+    }
+
+    p {
+        color: white;
+        font-family: 'National-Light';
+        font-size: 19px;
+    }
+
+}

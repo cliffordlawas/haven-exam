@@ -1,0 +1,20 @@
+<div class="footer-wrapper">
+  <div class="container">
+    <app-news-letter></app-news-letter>
+  </div>
+  <div class="container">
+    <div class="footer-logo"></div>
+    <ol class="menu-footer">
+      <ng-container *ngFor="let m of menuItem">
+        <li>
+          <a [href]="m.url">{{ m.label }}</a>
+        </li>
+      </ng-container>
+    </ol>
+    <p class="text-center">0800 700 699</p>
+    <p class="text-center">contact.us@haven.co.nz</p>
+    <hr />
+    <p class="text-right">Copyright © 2021 Haven Limited. All rights reserved. Privacy Policy</p>
+    <br/>
+  </div>
+</div>
